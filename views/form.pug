@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+
+  form(action="/new", method="POST")
+    div
+      label(for='text') Text:
+      input(type='text' id='text' name='text' required)
+
+    div
+      label(for='user') User:
+      input(type='text' id='user' name='user' required)
+
+    div
+      button(type='submit') Submit
